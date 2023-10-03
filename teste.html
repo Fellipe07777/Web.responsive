@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--TESTE--</title>
+    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="menu02.css" >
+</head>
+<body>
+    
+  <header>
+    <div class="conteudo">
+        <nav id="nav-header" class="menu">
+            <a>inicio</a>
+            <a>sobre</a>
+            <a>endereço</a>
+            <a>contate-nos</a>
+            <i class="fa-solid fa-x"></i>
+        </nav>
+        <a class="menu-barras" onclick="mostrarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        </div>
+    </header>
+
+        <script src="https://kit.fontawesome.com/87b503d0e8.js" crossorigin="anonymous"></script>
+        <script>
+        function mostrarMenu() {
+      var menu = document.getElementById("nav-header");
+      var icone = document.getElementById("icone");
+          
+  if (getComputedStyle(menu).display == 'none') {
+    menu.style.display = "flex";
+    icone.classlist.add("fa-bars");
+    icone.classlist.remove("fa-x");
+  } else {
+      menu.style.display = "none";
+      icone.classlist.add("fa-x");
+      icone.classlist.remove("fa-bars");
+  }
+}
+
+        </script>
+
+    <header class="showcase">
+      <h2>TENIS BAR</h2>
+      <p>
+        Os melhores tenis aqui
+      </p>
+      <a href="#" class="btn">
+        COMPRE <i class="fas fa-chevron-right"></i>
+      </a>
+    </header>
+
+    <!-- cards 1 -->
+    <section class="home-cards">
+      <div>
+        <img src="https://artwalk.vteximg.com.br/arquivos/ids/278081/tenis-air-jordan-1-retro-high-og-starfish-feminino-1.jpg?v=637983490066900000" alt="">
+        <h3>JORDAN 1</h3>
+        <p>
+          Tênis Air Jordan 1 x Shattered Backboard Away Laranja Branco Unissex
+        </p>
+        <a href="#">COMPRE AQUI<i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img src="https://artwalk.vteximg.com.br/arquivos/ids/278081/tenis-air-jordan-1-retro-high-og-starfish-feminino-1.jpg?v=637983490066900000" alt="" />
+        <h3>JORDAN 1</h3>
+        <p>
+          Tênis Air Jordan 1 x Shattered Backboard Away Laranja Branco Unissex
+        </p>
+        <a href="#">COMPRE AQUI <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img src="https://artwalk.vteximg.com.br/arquivos/ids/278081/tenis-air-jordan-1-retro-high-og-starfish-feminino-1.jpg?v=637983490066900000" alt="" />
+        <h3>JORDAN 1</h3>
+        <p>
+          Tênis Air Jordan 1 x Shattered Backboard Away Laranja Branco Unissex
+        </p>
+        <a href="#">COMPRE AQUI <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img src="https://artwalk.vteximg.com.br/arquivos/ids/278081/tenis-air-jordan-1-retro-high-og-starfish-feminino-1.jpg?v=637983490066900000" alt="" />
+        <h3>JORDAN 1</h3>
+        <p>
+          Tênis Air Jordan 1 x Shattered Backboard Away Laranja Branco Unissex
+        </p>
+        <a href="#">COMPRE AQUI<i class="fas fa-chevron-right"></i></a>
+      </div>
+    </section>
+
+    
+  
+</body>
+</html>
